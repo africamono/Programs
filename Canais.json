@@ -1,7 +1,7 @@
 // Array de vídeos com URL e horário de início
 const videos = [
    
-    { url: "https://seed167.bitchute.com/OkD3fEQ7n2eI/KinRT8cmYftQ.mp4", startTime: "2024-10-24T18:50:00", reference: "Video 2" },
+    { url: "https://seed167.bitchute.com/OkD3fEQ7n2eI/KinRT8cmYftQ.mp4", startTime: "2024-10-24T18:50:02", reference: "Video 2" },
     
 
 // Função para tocar os vídeos no horário programado
