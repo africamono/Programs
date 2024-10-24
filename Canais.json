@@ -1,33 +1,18 @@
-// Array de vídeos com URL e horário de início
-const videos = [
-   
-    { url: "https://seed167.bitchute.com/OkD3fEQ7n2eI/KinRT8cmYftQ.mp4", startTime: "2024-10-24T18:50:02", reference: "Video 2" },
-    
-
-// Função para tocar os vídeos no horário programado
-function scheduleVideos() {
-    const now = new Date();
-
-    videos.forEach(video => {
-        const startTime = new Date(video.startTime);
-        
-        // Se o horário de início do vídeo for no futuro, agende-o
-        if (startTime > now) {
-            const delay = startTime - now; // Tempo até o vídeo começar
-            setTimeout(() => {
-                const videoElement = document.getElementById("videoPlayer");
-                videoElement.src = video.url;
-                videoElement.play();
-
-                // Exibe a referência do vídeo
-                const referenceElement = document.getElementById("videoReference");
-                referenceElement.innerText = video.reference;
-            }, delay);
-        }
-    });
-}
-
-// Inicia a programação ao carregar a página
-window.onload = () => {
-    scheduleVideos();
-};
+[
+  {
+    "url": "https://seed305.bitchute.com/OkD3fEQ7n2eI/M0tlZveG084G.mp4"
+  },
+  {
+    "url": "https://seed167.bitchute.com/OkD3fEQ7n2eI/KinRT8cmYftQ.mp4",
+    "startDate": "2024-10-24",
+    "startTime": "19:20:00"
+  },
+  {
+    "url": "https://seed126.bitchute.com/OkD3fEQ7n2eI/b6rk8NOpcySB.mp4", "
+  },
+  {
+    "url": "https://seed128.bitchute.com/OkD3fEQ7n2eI/9wBdBU0C1aKY.mp4",
+    "startDate": "2024-10-24",
+    "startTime": "19:18:00"
+  }
+]
